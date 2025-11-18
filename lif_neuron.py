@@ -1,7 +1,7 @@
 import numpy as np
 
 class LIF_neuron:
-    def __init__(self, type, tau_m=20.0, v_rest=-65.0, v_thresh=-50.0, v_reset=-65.0, r_m=1.0, dt=1.0):
+    def __init__(self, type, tau_m=20.0, v_rest=-65.0, v_thresh=-10.0, v_reset=-65.0, r_m=1.0, dt=1.0):
         self.type = type
         
         self.tau_m = tau_m

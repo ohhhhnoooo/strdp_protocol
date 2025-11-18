@@ -17,14 +17,14 @@ if __name__ == "__main__":
     # phases = np.linspace(2 * np.pi, 0, n_pre, endpoint=False)
     # I_list = [lambda t, phase=phase: 160 * (np.sin(t/1000 * 2 * np.pi + phase)) for phase in phases]   # pA
     # const
-    I_list = [lambda t: 70]
+    I_list = [lambda t: 1000]
     # exp
     # I_list = [lambda t, phase=phase: 100 * (np.exp(-t/1000)) + phase for phase in phases]
 
     # I_list = [(lambda t: 200 * (np.sin(t/1000 * 2 * np.pi))), (lambda t: 200 * (np.cos(t/1000 * 2 * np.pi))), (lambda t: 150 * (np.sin(t/1000 * 2 * np.pi)))]
 
     # weights
-    init_weight = 10
+    init_weight = 0.1
     weight_matrix = np.linspace(0.5, 0.5, n_pre).reshape(n_pre, n_post)
     # weight_matrix = np.random.uniform(0, 1.0, size=(n_pre, n_post))
 
